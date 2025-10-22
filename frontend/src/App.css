@@ -1,0 +1,59 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.App {
+    background: #151515;
+    min-height: 100vh;
+    overflow-x: hidden;
+    color: #fff;
+}
+
+.portfolio-container {
+    position: relative;
+    width: 100%;
+}
+
+/* Smooth scrolling */
+html {
+    scroll-behavior: smooth;
+}
+
+/* Selection styles */
+::selection {
+    background: rgba(136, 162, 255, 0.3);
+    color: #fff;
+}
+
+::-moz-selection {
+    background: rgba(136, 162, 255, 0.3);
+    color: #fff;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background: #151515;
+}
+
+::-webkit-scrollbar-thumb {
+    background: linear-gradient(
+        180deg,
+        #88a2ff 0%,
+        #d987ff 100%
+    );
+    border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: linear-gradient(
+        180deg,
+        #d987ff 0%,
+        #ff84e4 100%
+    );
+}
