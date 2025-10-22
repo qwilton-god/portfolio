@@ -1,4 +1,5 @@
 import React, { useEffect, useState, useCallback } from 'react';
+import Navigation from '../components/Navigation';
 import Hero from '../components/Hero';
 import About from '../components/About';
 import Skills from '../components/Skills';
@@ -24,6 +25,7 @@ const Portfolio = () => {
 
   return (
     <div className="portfolio-container">
+      <Navigation />
       <LightRays mousePosition={mousePosition} />
       <Hero />
       <About />

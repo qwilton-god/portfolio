@@ -24,17 +24,7 @@ const Footer = () => {
             </p>
           </div>
 
-          <div className="footer-links">
-            <div className="footer-column">
-              <h4 className="footer-column-title">Навигация</h4>
-              <ul className="footer-list">
-                <li><a href="#about" className="footer-link">О себе</a></li>
-                <li><a href="#skills" className="footer-link">Навыки</a></li>
-                <li><a href="#projects" className="footer-link">Проекты</a></li>
-              </ul>
-            </div>
-
-            <div className="footer-column">
+            <div className="footer-column footer-contact">
               <h4 className="footer-column-title">Связь</h4>
               <ul className="footer-list">
                 <li><a href="mailto:qwilton59@gmail.com" className="footer-link">Email</a></li>
@@ -67,7 +57,6 @@ const Footer = () => {
             ))}
           </div>
         </div>
-      </div>
     </footer>
   );
 };

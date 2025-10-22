@@ -12,7 +12,7 @@ const Hero = () => {
   };
 
   return (
-    <section className="hero-section">
+    <section className="hero-section" id="hero">
       <div className="hero-background">
         <img 
           src="https://images.unsplash.com/photo-1607799279861-4dd421887fb3?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NDk1Nzd8MHwxfHNlYXJjaHwxfHxwcm9ncmFtbWluZ3xlbnwwfHx8fDE3NjExMzc3NDR8MA&ixlib=rb-4.1.0&q=85"
