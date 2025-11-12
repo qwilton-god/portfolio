@@ -4,6 +4,12 @@ import { ExternalLink, Github } from 'lucide-react';
 import { mockProjects } from '../mock';
 
 const Projects = () => {
+  const handleLiveUrlClick = (e, liveUrl) => {
+    if (liveUrl === '#') {
+      e.preventDefault();
+      alert('Проект пока не задеплоен. Скоро будет доступен!');
+    }
+  };
   return (
     <section className="projects-section" id="projects">
       <div className="projects-container">
@@ -37,6 +43,7 @@ const Projects = () => {
                       className="project-link"
                       target="_blank"
                       rel="noopener noreferrer"
+                      onClick={(e) => handleLiveUrlClick(e, project.liveUrl)}
                     >
                       <ExternalLink className="link-icon" />
                       <span>Live Demo</span>
